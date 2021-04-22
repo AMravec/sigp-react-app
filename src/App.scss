@@ -1,0 +1,36 @@
+$border-color: #ccc;
+
+.movie-list {
+  // border: 1px solid $border-color;
+
+
+  .movie-list-item {
+    padding: 1em;
+
+    & + .movie-list-item {
+      border-top: 1px solid $border-color;
+    }
+
+    .movie-list-item-poster{
+      max-width: 200px;
+    }
+  }
+}
+
+.favorite-btn {
+  &.active svg {
+    fill: #ffd300;
+
+    &:hover {
+      fill: black;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  svg:hover {    
+    fill: #ffd300; 
+  }
+}
